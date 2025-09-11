@@ -1,0 +1,226 @@
+body {
+  background-color: black;
+}
+
+/* Phone */
+@media only screen and (max-width: 750px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    /* aspect-ratio: 750 / 2360; */
+    display: block;
+    object-fit: contain;
+  }
+
+  .top-floating {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    aspect-ratio: 750 / 120;
+    z-index: 99;
+    position: fixed;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .top-floating img {
+    float: right;
+    margin-top: 1vh;
+  }
+
+  .bottom-floating {
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    aspect-ratio: 750 / 120;
+    z-index: 99;
+    position: fixed;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .bottom-floating img {
+    float: right;
+    margin-top: 1vh;
+  }
+
+  .btn_click {
+    height: 55px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    top: calc(63vh - 1px);
+    margin: 0 10px;
+  }
+
+  .btn_click img {
+    width: 94vw;
+    height: auto;
+    z-index: 1;
+  }
+
+  .carousel {
+    top: 110vh;
+    height: 76px;
+    display: flex;
+    margin: 0 3vw;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  .carousel img {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    margin-left: 10px;
+    animation: carousel 15s infinite;
+  }
+
+  @keyframes carousel {
+    0% {
+      transform: translateX(0%);
+      animation-timing-function: linear;
+    }
+
+    33% {
+      transform: translateX(-100%);
+      animation-timing-function: linear;
+    }
+
+    66% {
+      transform: translateX(-200%);
+      animation-timing-function: linear;
+    }
+
+    100% {
+      transform: translateX(-280%);
+      animation-timing-function: linear;
+    }
+  }
+}
+
+/* PC */
+@media only screen and (min-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0 25vw;
+    background-color: rgba(26, 1, 2, 1);
+  }
+
+  .container {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 750px;
+    /* aspect-ratio: 750 / 2360; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .top-floating {
+    top: 0;
+    z-index: 99;
+    position: fixed;
+    text-align: center;
+    background-size: cover;
+    height: 94px;
+    width: 750px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .top-floating img {
+    float: right;
+    margin-top: 1vh;
+    margin-right: 1vw;
+  }
+
+  .bottom-floating {
+    bottom: 0;
+    z-index: 99;
+    position: fixed;
+    text-align: center;
+    background-size: cover;
+    height: 94px;
+    width: 750px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .bottom-floating img {
+    float: right;
+    margin-top: 1vh;
+    margin-right: 1vw;
+  }
+
+  .btn_click {
+    height: 55px;
+    display: flex;
+    margin: 0 8px;
+    overflow: hidden;
+    position: absolute;
+    top: calc(70vh - 1px);
+    width: calc(30vw - 20px);
+  }
+
+  .btn_click img {
+    width: 94vw;
+    height: auto;
+  }
+
+  /* carousel*/
+
+  .carousel {
+    height: 140px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    top: calc(134vh - 1px);
+    width: calc(30vw - 1px);
+  }
+
+  .carousel img {
+    width: 100%;
+    height: auto;
+    margin-left: 10px;
+    animation: carousel 15s infinite;
+  }
+
+  @keyframes carousel {
+    0% {
+      transform: translateX(0%);
+      animation-timing-function: linear;
+    }
+
+    33% {
+      transform: translateX(-90%);
+      animation-timing-function: linear;
+    }
+
+    66% {
+      transform: translateX(-190%);
+      animation-timing-function: linear;
+    }
+
+    100% {
+      transform: translateX(-280%);
+      animation-timing-function: linear;
+    }
+  }
+}
