@@ -8,7 +8,7 @@
 
     <style>
        /* Botão m7 e button2 juntos */
-           #img_header_top {
+        #img_header_top {
             position: absolute;
             top: 30px;
             left: 45%;
@@ -25,11 +25,12 @@
         #img_header_top img:hover {
             transform: scale(1.1);
         }
+
         /* Nav principal com m1, m2, m3 e m4 */
         #img_header {
-             position: absolute;
+            position: absolute;
             top: 159px;
-            left: 45%;  /* Ajuste horizontal */
+            left: 45%;
             transform: translateX(-50%);
             display: flex;
             gap: 15px;
@@ -55,7 +56,7 @@
 
         /* Segundo botão */
         #button2 {
-               position: absolute;
+            position: absolute;
             top: 3110px;
             left: 600px;
             z-index: 10000;
@@ -68,6 +69,54 @@
         }
         #button2 img:hover {
             transform: scale(1.1);
+        }
+
+        /* ======= MOBILE ADAPTAÇÃO ======= */
+        @media (max-width: 768px) {
+            #img_header_top {
+                top: 15px;
+                left: 50%;
+                gap: 10px;
+            }
+            #img_header_top img {
+                height: 60px;
+            }
+            #img_header {
+                top: 100px;
+                gap: 10px;
+            }
+            #img_header img {
+                height: 30px;
+            }
+            #button {
+                top: 900px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            #button2 {
+                top: 2000px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            #button2 img {
+                height: 100px;
+            }
+            #img_container {
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #img_header_top img {
+                height: 50px;
+            }
+            #img_header img {
+                height: 25px;
+            }
+            #button2 img {
+                height: 80px;
+            }
         }
     </style>
 </head>
