@@ -224,3 +224,18 @@ body {
     }
   }
 }
+
+/* ===== Ajustes extras para mobile ===== */
+@media only screen and (max-width: 750px) {
+    #img_header_top, #img_header, #button2 {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+    #img_header_top img { height: 60px !important; }
+    #img_header img { height: 30px !important; }
+    #button2 img { height: 100px !important; }
+    #img_container {
+        background-size: cover !important;
+        background-position: center !important;
+    }
+}
